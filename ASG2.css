@@ -1,0 +1,201 @@
+  * {
+      font-family:"Segoe UI Light",-apple-system, BlinkMacSystemFont, "Roboto", arial, sans-serif
+  }
+  /* BACKGROUND LOOPS UNDER 710px WIDTH - BASICALLY ON ALL PHONES
+     POSSIBLY LOOK AT MEDIA TAGS TO DEAL WITH LOW RES PHONES AND TALL BOIS */
+  body {
+    background:url("bglight.png");
+    background-attachment: fixed;
+    background-size: auto auto;
+    background-position-y: 68px;
+  }
+  div#dmtoggle::before {
+    position: absolute;
+    right: 30px;
+    content: '\0025D0';
+    color: black;
+    font-size: 25px;
+    margin-top: -4px;
+    z-index: -9999;
+}
+div#mactoggle::before{
+    background-image:url("lmosicon.png");
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-size: 60px;
+    right: 32px;
+    z-index: -9999;
+    margin-top: -3px;
+
+}
+div#pagename {
+    margin-top:-4px;
+    max-widtH: calc(100vw - 236px);
+    overflow: hidden;
+    white-space: pre-line;
+    max-height: 35px;
+}
+div#shortcutinfocontainer {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    width: calc(58.5vw);
+    height: 50vh;
+    box-shadow: black 1px 1px 7px;
+    margin-top: calc(13vw/32);
+}
+  div.headerbox.sticky{
+      display:box;
+      top:0px;
+      left:0px;
+      width:100%;
+      position:fixed;
+      height:50px;
+      background-color:#e2e1e1;
+      align-content: center;
+      padding-top:15px;
+      z-index:10001;
+  }
+  a#formac {
+    font-size: 50%;
+    color: #999;
+}
+  #pagename {
+      position:absolute;
+      left:15px;
+      font-size:30px;
+      display:inline-block;
+  }
+  #shortcutsearch {
+      right:25px;
+      height:25px;
+      position:absolute;
+  }
+.content {
+    width: 78vw;
+    height: auto;
+    padding-left: 18vw;
+    padding-top: 150px;
+    display: flex;
+    z-index: 10000;
+    position: absolute;
+}
+#rightsidebar {
+    position: fixed;
+    right: 0px;
+    margin-top: 20vh;
+    z-index: -99;
+    max-width: 18vw;
+    text-align: right;
+}
+.sidebaritem:hover {
+    margin-left: 2vw;
+    white-space: initial;
+    color:black;
+    font-size:inherit;
+}
+
+.sidebaritem {
+    width: auto;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 9px 15px;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: grey 1px 3px 6px 0;
+    margin-left: 17vw;
+    color:white;
+    white-space: nowrap;
+    min-height:20px;
+    transition: margin-left .2s,font-size .2s;
+    font-size: 0;
+}
+  .clickable, .clickable * {
+      cursor:pointer;
+  }
+
+  #shortcutcontainer{
+      display:block;
+      width:75%;
+      background-color:rgba(0, 0, 0, 0.28);
+      padding:10px;
+      padding-bottom:0px;
+      margin-bottom:40px;
+      height:100%;
+      overflow:wrap;
+      float:left;
+  }
+  .uibox{
+
+      text-align:center;
+      float:top;
+      font-size:22px;
+      width:100%;
+      min-width:100%;
+      box-sizing:border-box;
+      display:box;
+      height:auto;
+      padding-top:12px;
+      padding-bottom:12px;
+      margin-bottom:20px;
+      background:white;border-radius: 7px;
+    box-shadow: inset #bfbfbf -2px -2px 0px 0px;
+  }
+.subtext {
+    font-size: 13px;
+    color: #989898;
+}
+.subtext.shortcut {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.subtext.shortcut::before {
+    content: '';
+    background-color: #dcdcdc;
+    width: 80px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+}
+div#shortcutname {
+    text-align: center;
+    margin-top: 16vh;
+    font-size: 30px;
+}
+div#shortcut {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 65px;
+}
+#creditline{
+    color:white;
+    margin-bottom:5px;
+    font-size:16px;
+}
+            kbd{
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: -3px 0.2em 0 0.2em;
+            padding: 0.1em 0.5em !important;
+            background-color: #e0e0e0;
+            color: #000;
+            font-family: monospace !important;
+            font-size: 93%;
+            line-height: 1.4;
+            white-space: nowrap;
+            vertical-align: middle;
+            }
+    div#pagetitle {
+    font-size: 30px;
+    position: absolute;
+    top: 105px;
+    margin-left: 18vw;
+}

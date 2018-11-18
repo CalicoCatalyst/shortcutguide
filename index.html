@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<!-- RC1. Beginning of this project. Will be beta tested on folks before ANY release :) -->
+<!-- We're going to pack this all into one file at release. Modular is cool but I want an easily downloadable standalone-->
+
+<!--
+
+REMEMBER TO STICK IN GOOGLE ANALYTICS AND SOME FORM OF ADBLOCK MESSAGE
+
+Going to use a rather unorthodox approach to this webpage.
+
+We have 19 categories each with under 20 shortcuts in them.
+
+I can create 20 HTML divs for the 19 elements. The text and subtext can be set in javascript.
+
+All of the shortcuts will be stored in the JS
+
+Designed and coded from scratch by /u/Insxnity
+
+Minimum Resolution before things stop working: 245px w x 98px h
+
+Things look beautiful on mobile screens. Wonky ones or people who insist on portrait mode might look a bit off. s
+
+Site is functional at any resolution above that but things start to get
+        noticably buggy around 2000px raw unscaled width and 4000px raw unscaled height
+
+        Still usable on an UHD screen with no scaling.
+
+
+ -->
+
+
+<head>
+  <title>Ableton 10 Shortcut Guide</title>
+  <meta name="description" content="" />
+  <script src="ASG2.js"></script>
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" type="text/css" href="ASG2.css">
+  <link rel="stylesheet" type="text/css" id="darkmode" href="darkmode.css" />
+  <style>
+  </style>
+</head>
+
+<body onload="callCategories();">
+
+    <div class="sticky headerbox" id="stickyHeaderBox">
+
+        <div class="title" id="pagename"><div class="clickable" id="abletonlogo" onClick="toggleDarkMode();" title="Toggle Light/Dark Mode" style="background-image:url('abletonlogo.png');width: 50px;display: inline-block;height: 23px;background-size: 98px 23px;"></div> Ableton Live 10 Shortcut Guide<a id="formac" style="display:none"> (For Mac!)</a></div>
+
+        <input id="shortcutsearch" onInput="search(this.value);" name="Search Shortcuts" type="text" placeholder="Search Shortcuts" maxlength="20">
+
+    </div>
+    <div class="pagetitle" id="pagetitle">
+        Categories
+    </div>
+    <div class="content">
+    <style>
+
+
+    </style>
+        <div class="rightsidebar" id="rightsidebar">
+            <div class="sidebaritem clickable" id="dmtoggle" onClick="toggleDarkMode()">
+                Toggle Light/Dark Mode
+            </div>
+            <div class="sidebaritem clickable" id="mactoggle" onClick="toggleMacShortcuts()">
+                View Mac Shortcuts
+            </div>
+        </div>
+        <div class="itemcontainer" id="shortcutcontainer">
+            <div class="shortcutinfocontainer" id="shortcutinfocontainer" style="display:none">
+
+            <div id="scicholder"><div id="shortcutname">
+                     Placeholder Text
+                </div>
+                <div id="shortcut">
+                     <kbd>Shortcut</kbd>
+                </div>
+                </div>
+            </div>
+            <div class="uibox clickable" id="uib1" onclick="buttonClicked(1)">
+                Placeholder Title
+                <div class="subtext">
+                    If you're reading this the page did not load properly
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib2" onclick="buttonClicked(2)">
+                Placeholder Title
+                <div class="subtext">
+                    Try refreshing the page.
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib3" onclick="buttonClicked(3)">
+                Placeholder Title
+                <div class="subtext">
+                    This is what you'll see if the javascript file doesn't load properly
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib4" onclick="buttonClicked(4)">
+                Placeholder Title
+                <div class="subtext">
+                    You'll also see this if you're on some old browser
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib5" onclick="buttonClicked(5)">
+                Placeholder Title
+                <div class="subtext">
+                    I dont support old Internet Explorer versions
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib6" onclick="buttonClicked(6)">
+                Placeholder Title
+                <div class="subtext">
+                    If you're using a browser other than Chrome/Firefox/IE/Opera and get this error
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib7" onclick="buttonClicked(7)">
+                Placeholder Title
+                <div class="subtext">
+                    It likely doesn't support some javascript syntax used here
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib8" onclick="buttonClicked(8)">
+                Placeholder Title
+                <div class="subtext">
+                    I'll throw a link up at some point that removes certain features in exchange
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib9" onclick="buttonClicked(9)">
+                Placeholder Title
+                <div class="subtext">
+                    For you being able to use this tool
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib10" onclick="buttonClicked(10)">
+                Placeholder Title
+                <div class="subtext">
+                    <3
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib11" onclick="buttonClicked(11)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib12" onclick="buttonClicked(12)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib13" onclick="buttonClicked(13)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib14" onclick="buttonClicked(14)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib15" onclick="buttonClicked(15)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib16" onclick="buttonClicked(16)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib17" onclick="buttonClicked(17)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib18" onclick="buttonClicked(18)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib19" onclick="buttonClicked(19)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+        <div class="uibox clickable" id="uib20" onclick="buttonClicked(20)">
+                Placeholder Title
+                <div class="subtext">
+                    Alan add info please
+                </div>
+            </div>
+
+        <p id="creditline">Designed And Coded from Scratch by /u/Insxnity</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

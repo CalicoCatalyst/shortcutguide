@@ -1,0 +1,28 @@
+  body {
+      background-image:url("bgdark.png");
+  }
+  div#stickyHeaderBox {
+    background-color: #131317;
+    color: white;
+}
+div#dmtoggle::before{
+    color:white;
+}
+div#mactoggle::before{
+    background-image:url("dmosicon.png");
+}
+
+#pagetitle{
+    color:white;
+}
+div#shortcutcontainer {
+    background-color: rgba(255,255,255,0.28);
+}
+div#abletonlogo{
+    background-position-x:50px;
+}
+div.uibox {
+    color: white !important;
+    background-color: #3a3a3a;
+    box-shadow: inset #5a5a5a 3px 2px 3px 0;
+}
