@@ -199,3 +199,15 @@ div#shortcut {
     top: 105px;
     margin-left: 18vw;
 }
+p#donatebutton {
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    background-color: #a7a7a7;
+    padding: 3px 10px;
+    border: solid 1px black;
+}
+#donatebutton a {
+    color: black;
+    text-decoration: none;
+}
